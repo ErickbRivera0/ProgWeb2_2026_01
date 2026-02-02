@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>PW2_Servlets</display-name>
+
+    <servlet>
+        <servlet-name>ServletBinarios</servlet-name>
+        <servlet-class>servlets.ServletBinarios</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletBinarios</servlet-name>
+        <url-pattern>/ServletBinarios</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletNumeros</servlet-name>
+        <servlet-class>servlets.ServletNumeros</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletNumeros</servlet-name>
+        <url-pattern>/ServletNumeros</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletHipotenusa</servlet-name>
+        <servlet-class>servlets.ServletHipotenusa</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletHipotenusa</servlet-name>
+        <url-pattern>/ServletHipotenusa</url-pattern>
+    </servlet-mapping>
+
+</web-app>

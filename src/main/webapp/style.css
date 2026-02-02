@@ -1,0 +1,203 @@
+/* ===========================
+   PW2 • SERVLETS - STYLE.CSS
+   Consistente y elegante
+   =========================== */
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f6f7fb;
+  color:#111827;
+}
+
+/* Layout */
+.container{
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 0 18px;
+}
+
+/* Header */
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom: 16px;
+}
+
+.brand h2{
+  margin:0;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing:.2px;
+}
+
+.brand small{
+  display:block;
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: .75;
+}
+
+.pill{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  padding: 8px 14px;
+  border-radius:999px;
+  font-size: 12px;
+  font-weight: 800;
+  color:#2563eb;
+  white-space: nowrap;
+}
+
+/* Card */
+.card{
+  background:#fff;
+  border-radius: 18px;
+  border:1px solid #e5e7eb;
+  box-shadow: 0 18px 45px rgba(17,24,39,.08);
+}
+
+.card-body{
+  padding: 22px;
+}
+
+.card-soft{
+  border:1px solid #e5e7eb;
+  box-shadow:none;
+  border-radius: 16px;
+}
+
+/* Titles */
+.page-title{
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.note{
+  margin: 0 0 16px;
+  font-size: 14px;
+  opacity: .75;
+}
+
+/* Page head (title + back button) */
+.page-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom: 14px;
+}
+
+/* Buttons */
+.nav{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top: 8px;
+}
+
+.nav-main{
+  margin-top: 14px;
+}
+
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  border:1px solid #d1d5db;
+  background:#fff;
+  color:#111827;
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-weight: 800;
+  cursor:pointer;
+  transition:.15s;
+}
+
+.btn:hover{ filter: brightness(.97); }
+
+.btn.primary{
+  background:#2563eb;
+  border-color:#2563eb;
+  color:#fff;
+}
+
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.col-span-2{
+  grid-column: span 2;
+}
+
+.label{
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  opacity: .9;
+}
+
+input, select{
+  width:100%;
+  padding: 11px 12px;
+  border-radius: 14px;
+  border:1px solid #d1d5db;
+  outline:none;
+  font-size: 14px;
+}
+
+input:focus, select:focus{
+  border-color:#2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+}
+
+.help{
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: .75;
+}
+
+.actions{
+  margin-top: 16px;
+  display:flex;
+  justify-content:flex-end;
+  gap:12px;
+  flex-wrap: wrap;
+}
+
+
+.footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.who{
+  margin:0;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.meta{
+  font-size: 13px;
+  opacity: .75;
+}
+
+
+@media(max-width: 700px){
+  .grid{ grid-template-columns: 1fr; }
+  .col-span-2{ grid-column: span 1; }
+  .footer{ flex-direction: column; align-items:flex-start; }
+  .pill{ display:none; }
+}

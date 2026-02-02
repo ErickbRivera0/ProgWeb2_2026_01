@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Números</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+  <div class="brand">
+    <h2>PW2 • Servlets</h2>
+    <small>Menú y ejercicios</small>
+  </div>
+   <div class="pill">Tomcat 11 • Servlet 6.0</div>
+  </div>
+    <div class="card">
+      <div class="card-body">
+        
+<h2>Servlet Números</h2>
+<div class="nav">
+  <a class="btn" href="index.html">Volver al menú</a>
+</div>
+
+<form action="ServletNumeros" method="post" class="card card-soft">
+  <div class="card-body">
+    <div class="grid">
+      <div>
+        <div class="label">Operación</div>
+        <select name="operacion" required>
+          <option value="mayor">Mayor de 3 números</option>
+          <option value="menor">Menor de 3 números</option>
+          <option value="moda">Más repetido (N números)</option>
+        </select>
+      </div>
+
+      <div>
+        <div class="label">A</div>
+        <input name="a" type="number" step="1" placeholder="Solo para mayor/menor">
+      </div>
+      <div>
+        <div class="label">B</div>
+        <input name="b" type="number" step="1" placeholder="Solo para mayor/menor">
+      </div>
+      <div>
+        <div class="label">C</div>
+        <input name="c" type="number" step="1" placeholder="Solo para mayor/menor">
+      </div>
+
+      <div class="col-span-2">
+        <div class="label">Lista de números (para “Más repetido”)</div>
+        <input
+          name="lista"
+          placeholder="Ej: 5, 7, 7, 2, 7, 5 (separados por coma o espacio)">
+        <div class="help">Acepta comas y espacios. Ej: <b>1 2 2 </b> o <b>1,2,2,</b></div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn primary" type="submit">Calcular</button>
+      <a class="btn" href="numeros.html">Limpiar</a>
+    </div>
+  </div>
+</form>
+
+        <div class="footer">
+          <h2>Eric Bonilla y Margie Dubon</h2>
+          <h2>202110080015 - 202220070063</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
